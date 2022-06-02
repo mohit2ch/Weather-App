@@ -4,7 +4,7 @@ console.log("index.js loaded");
 load('London');
 function load(city){
 
-    const url = `http://api.weatherapi.com/v1/current.json?key=c96db19cac8643199b4112544220305&q=${city}&aqi=no`;
+    const url = `https://api.weatherapi.com/v1/current.json?key=c96db19cac8643199b4112544220305&q=${city}&aqi=no`;
 
 fetch(url).then(function(response){
     return response.text();
